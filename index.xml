@@ -64,7 +64,7 @@ git commit -m xxxxx(修改提示)
 &lt;pre&gt;&lt;code&gt;git remote add origin git@github.com:xxx/x.github.io.git(注意必须是git@开头)
 git push -u origin master
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;然后打开你github上仓库的右侧setting，找到Github Page 点开里面蓝色的链接你将看到你的博客页面，至此你的博客就搭建成功了！&lt;/p&gt;
+&lt;p&gt;然后打开你github上仓库的右侧Settings，找到Github Page 点击下面的蓝色链接，你将看到你的博客页面，至此你的博客就搭建成功了！&lt;/p&gt;
 </description>
       
     </item>
