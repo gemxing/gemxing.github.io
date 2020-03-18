@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>用hugo搭建博客 - Jane - A super concise theme for Hugo</title>
+  <title>用hugo搭建博客(Windows) - Jane - A super concise theme for Hugo</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="xianmin" />
-  <meta name="description" content="第一步 先。。。 第二步 kjdkjklsfj" />
+  <meta name="description" content="第一步 安装Hugo 去Hugo release 页面下载hugo_xxx_Windows-64bit.zip 解压，把hugo.exe放到自己喜欢的位置我的在D" />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -59,23 +59,23 @@
 
 
 
-<meta property="og:title" content="用hugo搭建博客" />
-<meta property="og:description" content="第一步 先。。。 第二步 kjdkjklsfj" />
+<meta property="og:title" content="用hugo搭建博客(Windows)" />
+<meta property="og:description" content="第一步 安装Hugo 去Hugo release 页面下载hugo_xxx_Windows-64bit.zip 解压，把hugo.exe放到自己喜欢的位置我的在D" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/post/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" />
 <meta property="article:published_time" content="2020-03-18T18:27:31+08:00" />
 <meta property="article:modified_time" content="2020-03-18T18:27:31+08:00" />
-<meta itemprop="name" content="用hugo搭建博客">
-<meta itemprop="description" content="第一步 先。。。 第二步 kjdkjklsfj">
+<meta itemprop="name" content="用hugo搭建博客(Windows)">
+<meta itemprop="description" content="第一步 安装Hugo 去Hugo release 页面下载hugo_xxx_Windows-64bit.zip 解压，把hugo.exe放到自己喜欢的位置我的在D">
 <meta itemprop="datePublished" content="2020-03-18T18:27:31&#43;08:00" />
 <meta itemprop="dateModified" content="2020-03-18T18:27:31&#43;08:00" />
-<meta itemprop="wordCount" content="11">
+<meta itemprop="wordCount" content="499">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="用hugo搭建博客"/>
-<meta name="twitter:description" content="第一步 先。。。 第二步 kjdkjklsfj"/>
+<meta name="twitter:title" content="用hugo搭建博客(Windows)"/>
+<meta name="twitter:description" content="第一步 安装Hugo 去Hugo release 页面下载hugo_xxx_Windows-64bit.zip 解压，把hugo.exe放到自己喜欢的位置我的在D"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -337,7 +337,7 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">用hugo搭建博客</h1>
+      <h1 class="post-title">用hugo搭建博客(Windows)</h1>
       
       <div class="post-meta">
         <time datetime="2020-03-18" class="post-time">
@@ -365,8 +365,33 @@
 
     
     <div class="post-content">
-      <h1 id="第一步-先">第一步 先。。。</h1>
-<h1 id="第二步-kjdkjklsfj">第二步 kjdkjklsfj</h1>
+      <h1 id="第一步-安装hugo">第一步 安装Hugo</h1>
+<p>去<a href="https://github.com/gohugoio/hugo/releases">Hugo release</a> 页面下载hugo_xxx_Windows-64bit.zip</p>
+<p>解压，把hugo.exe放到自己喜欢的位置我的在D/Software/hugo/hugo.exe</p>
+<p>把D/Software/hugo/添加到Path环境变量</p>
+<p>重启项目终端，运行 hugo version 来查看版本</p>
+<p><img src="public%5Cimage%5C703_0" alt="1"></p>
+<h1 id="第二步-快速搭建">第二步 快速搭建</h1>
+<p>进入<a href="https://gohugo.io/">hugo</a>官网,点击Quick Start</p>
+<p>从Step2开始抄代码到终端运行，直到Step7</p>
+<p><img src="public%5Cimage%5CImage.png" alt="2"></p>
+<p>得到一个public目录，这就是我们的博客站点（要让别人看到这个网站请看下面的步骤）</p>
+<p>hugo server -D 可以预览草稿</p>
+<p>hugo server  可以预览非草稿</p>
+<h1 id="第三步-创建一个github仓库">第三步 创建一个Github仓库</h1>
+<p>仓库命必须为 :你的github用户名.github.io</p>
+<p>完成以后回到终端进入public：</p>
+<pre><code>cd public
+git init
+git add .
+git commit -m xxxxx(修改提示)
+</code></pre>
+<h1 id="第四步-关联github上的仓库">第四步 关联github上的仓库</h1>
+<p>终端输入下面指令（这些指令在你新建仓库的时候复制下来就行了）这里举例子</p>
+<pre><code>git remote add origin git@github.com:xxx/x.github.io.git(注意必须是git@开头)
+git push -u origin master
+</code></pre>
+<p>然后打开你github上仓库的右侧setting，找到Github Page 点开里面蓝色的链接你将看到你的博客页面，至此你的博客就搭建成功了！</p>
 
     </div>
 

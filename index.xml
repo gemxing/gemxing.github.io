@@ -32,14 +32,39 @@
     </item>
     
     <item>
-      <title>用hugo搭建博客</title>
+      <title>用hugo搭建博客(Windows)</title>
       <link>http://localhost:1313/post/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Wed, 18 Mar 2020 18:27:31 +0800</pubDate>
       
       <guid>http://localhost:1313/post/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
       
-        <description>&lt;h1 id=&#34;第一步-先&#34;&gt;第一步 先。。。&lt;/h1&gt;
-&lt;h1 id=&#34;第二步-kjdkjklsfj&#34;&gt;第二步 kjdkjklsfj&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;第一步-安装hugo&#34;&gt;第一步 安装Hugo&lt;/h1&gt;
+&lt;p&gt;去&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;Hugo release&lt;/a&gt; 页面下载hugo_xxx_Windows-64bit.zip&lt;/p&gt;
+&lt;p&gt;解压，把hugo.exe放到自己喜欢的位置我的在D/Software/hugo/hugo.exe&lt;/p&gt;
+&lt;p&gt;把D/Software/hugo/添加到Path环境变量&lt;/p&gt;
+&lt;p&gt;重启项目终端，运行 hugo version 来查看版本&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;public%5Cimage%5C703_0&#34; alt=&#34;1&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;第二步-快速搭建&#34;&gt;第二步 快速搭建&lt;/h1&gt;
+&lt;p&gt;进入&lt;a href=&#34;https://gohugo.io/&#34;&gt;hugo&lt;/a&gt;官网,点击Quick Start&lt;/p&gt;
+&lt;p&gt;从Step2开始抄代码到终端运行，直到Step7&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;public%5Cimage%5CImage.png&#34; alt=&#34;2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;得到一个public目录，这就是我们的博客站点（要让别人看到这个网站请看下面的步骤）&lt;/p&gt;
+&lt;p&gt;hugo server -D 可以预览草稿&lt;/p&gt;
+&lt;p&gt;hugo server  可以预览非草稿&lt;/p&gt;
+&lt;h1 id=&#34;第三步-创建一个github仓库&#34;&gt;第三步 创建一个Github仓库&lt;/h1&gt;
+&lt;p&gt;仓库命必须为 :你的github用户名.github.io&lt;/p&gt;
+&lt;p&gt;完成以后回到终端进入public：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd public
+git init
+git add .
+git commit -m xxxxx(修改提示)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;第四步-关联github上的仓库&#34;&gt;第四步 关联github上的仓库&lt;/h1&gt;
+&lt;p&gt;终端输入下面指令（这些指令在你新建仓库的时候复制下来就行了）这里举例子&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git remote add origin git@github.com:xxx/x.github.io.git(注意必须是git@开头)
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后打开你github上仓库的右侧setting，找到Github Page 点开里面蓝色的链接你将看到你的博客页面，至此你的博客就搭建成功了！&lt;/p&gt;
 </description>
       
     </item>
